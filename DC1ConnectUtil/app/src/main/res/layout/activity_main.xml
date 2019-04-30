@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginVertical="20sp"
+        android:text="操作步骤："
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="20sp"
+        android:text="1. 请长按DC1的总开关3-5秒"
+        android:textSize="18sp"
+        android:layout_marginStart="20sp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:text="2. 待WiFi连接灯快速闪烁时松手"
+        android:textSize="18sp"
+        android:layout_marginStart="20sp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:text="3. 用本机连接名如PHI_PLUG1_xxxx的开放WiFi"
+        android:textSize="18sp"
+        android:layout_marginStart="20sp" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:text="4. 请输入待连接的WiFi SSID（仅支持2.4G）: "
+        android:textSize="18sp"
+        android:layout_marginStart="20sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_below="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginStart="20sp" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:text="5. 请输入待连接的WiFi密码: "
+        android:textSize="18sp"
+        android:layout_marginStart="20sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_below="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginStart="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="点击配网"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
